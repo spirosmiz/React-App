@@ -1,0 +1,56 @@
+// Font
+
+// Colors
+$primary: rgb(255, 251, 251);
+$secondary: #121333;
+$dark: #000000;
+$light: rgb(250, 243, 229);
+$warning: rgb(247, 253, 218);
+$danger : rgb(230, 28, 28);
+
+
+// Navbar
+//Navbar
+$navbar-nav-link-padding-x: 0.8rem;
+$navbar-padding-y: 1rem;
+$navbar-dark-color: #ffffff;
+$navbar-dark-hover-color: rgb(155, 155, 155);
+$navbar-primary-hover-color: rgb(0, 0, 0);
+// Buttons
+$button-radius: 15px;
+$button-padding-x: 30px;
+$button-padding-y: 10px;
+
+$btn-border-radius: $button-radius;
+$btn-border-radius-sm: $button-radius;
+$btn-border-radius-lg: $button-radius;
+$btn-padding-x: $button-padding-x;
+$btn-padding-x-sm: $button-padding-x;
+$btn-padding-x-lg: $button-padding-x;
+$btn-padding-y: $button-padding-y;
+$btn-padding-y-sm: $button-padding-y;
+$btn-padding-y-lg: $button-padding-y;
+$navbar-toggler-border-radius: 5px;
+$list-group-bg: white;
+// Spacers
+$spacer: 1rem !default;
+$spacers: (
+  0: 0,
+  1: $spacer * 0.25,
+  2: $spacer * 0.5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: $spacer * 3.5,
+  7: $spacer * 8,
+  8: $spacer * 12,
+  9: $spacer * 4.5,
+  10: $spacer * 15,
+) !default;
+
+$line-height-base: 1.7;
+$headings-margin-bottom: $spacer * 1;
+
+$enable-negative-margins: true;
+
+@import "../node_modules/bootstrap/scss/bootstrap";
