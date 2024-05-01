@@ -14,10 +14,10 @@ import { ImgToParticles } from "image-to-particles";
 type Myprops = {
   id: string;
   active: boolean;
-  onClickId: (id: string) => void;
+  onClickId: (id: string,active:boolean) => void;
 };
 
-export default function MyButton({ id, onClickId }: Myprops) {
+export default function MyButton({ id, onClickId}: Myprops) {
   const [isActive, setIsActive] = useState(false);
   function handleButton1() {
     console.log("geiaa");
@@ -37,7 +37,7 @@ export default function MyButton({ id, onClickId }: Myprops) {
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.8 }}
         onClick={() => {
-          onClickId(id);
+          onClickId(id,isActive);
           handleButton1();
         }}
       ></motion.div>

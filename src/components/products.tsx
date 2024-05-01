@@ -1,15 +1,50 @@
 import { Children, ReactNode } from "react";
 import "../../node_modules/bootstrap/dist/css/bootstrap.css";
 import "../index.css";
-import "./buttons";
 import axios from "axios";
-import Button from "./buttons";
 import MyButton from "./NewButton";
 
 export default function Product() {
-  function handleStatus(id: string) {
+
+  var data=[
+    {id:"ind1",
+    value:false},
+    {id:"ind2",
+    value:false},
+    {id:"ind3",
+    value:false}]
+
+   
+  
+function statusDisplay (){
+  const result = axios.get("http://localhost:4000/Interface/B3416");
+  result
+      .then((response) => {
+        console.log("Request successful! Response data:", response.data);
+        // Process the successful response data here
+      })
+      .catch((error) => {
+        console.error("Request failed:", error);
+        // Handle any errors that occurred during the request
+      });
+    }
+
+ const my_var=setInterval(() => {
+    statusDisplay();
+}, 10000);
+  function handleStatus(id: string ,active:boolean) {
     console.log("Button pressed by the user the id is:" + id);
-    const result = axios.post("http://10.10.1.74:4000/user/IO", { btn1: true });
+    if (active) {
+      active=false;
+    } else {
+      active=true;
+    }
+    
+    const data={
+      id:id,
+      value:active
+    }
+    const result = axios.post("http://localhost:4000/Interface/B3416",data);
 
     result
       .then((response) => {
