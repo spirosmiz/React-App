@@ -1,0 +1,81 @@
+body {
+  -webkit-overflow-scrolling: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.my-border {
+  border: 2px solid black;
+}
+.btn-circle {
+  border-radius: 50% !important;
+}
+.mybutton {
+  background-color: gray;
+  height: 10px !important;
+  width: 10px !important;
+}
+
+.mybutton_add {
+  background: rgb(170, 174, 170);
+  border-right: none;
+  border-top: none;
+  height: 5px !important;
+  width: 5px !important;
+}
+.mybutton_add:hover {
+  background: rgb(170, 174, 170);
+  height: 5px !important;
+  width: 5px !important;
+}
+
+.table-available {
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+}
+.table-available:hover {
+  background-color: black;
+  color: white;
+  transition: 0.3s;
+}
+.table-unavailabe {
+  background-color: red;
+  border-radius: 5px;
+}
+#table-container {
+  display: block;
+}
+#order-container {
+  display: none;
+}
+.order-border {
+  border: 3px solid gray;
+  border-radius: 10px;
+}
+.product-buttons {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  height: 20px;
+  width: 20px;
+  margin-left: 3px !important;
+  margin-right: 3px !important;
+}
+
+.navbuttons {
+  width: 15px;
+  height: 15px;
+}
+.button-of-order {
+  width: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-icons:hover {
+  color: yellow !important;
+  cursor: pointer;
+}
+
+.order-list li:nth-child(odd) {
+  background-color: rgb(192, 192, 192);
+}
